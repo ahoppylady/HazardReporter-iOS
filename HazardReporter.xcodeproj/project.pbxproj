@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		782BD4D32195394E00FD24F2 /* HazardReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782BD4D22195394E00FD24F2 /* HazardReport.swift */; };
+		782BED5121A45C4F00EA15AF /* ChangeNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782BED5021A45C4F00EA15AF /* ChangeNotifications.swift */; };
+		782BED5321A4BBB500EA15AF /* CKContainer + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782BED5221A4BBB500EA15AF /* CKContainer + Extensions.swift */; };
+		78FDC9DE218FB41F00A0D7DE /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FDC9DD218FB41F00A0D7DE /* CloudKit.framework */; };
+		F20E3AEA2074EE3E00FDE78B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3AE92074EE3E00FDE78B /* AppDelegate.swift */; };
+		F20E3AEF2074EE3E00FDE78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20E3AED2074EE3E00FDE78B /* Main.storyboard */; };
+		F20E3AF12074EE4000FDE78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E3AF02074EE4000FDE78B /* Assets.xcassets */; };
+		F20E3AF42074EE4000FDE78B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20E3AF22074EE4000FDE78B /* LaunchScreen.storyboard */; };
+		F20E3B022074EF6A00FDE78B /* ActiveHazardReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3AFE2074EF6A00FDE78B /* ActiveHazardReportsViewController.swift */; };
+		F20E3B032074EF6A00FDE78B /* EditHazardReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3AFF2074EF6A00FDE78B /* EditHazardReportViewController.swift */; };
+		F20E3B042074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3B002074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift */; };
+		F20E3B052074EF6A00FDE78B /* HazardReportDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E3B012074EF6A00FDE78B /* HazardReportDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		782BD4D22195394E00FD24F2 /* HazardReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HazardReport.swift; sourceTree = "<group>"; };
+		782BED5021A45C4F00EA15AF /* ChangeNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNotifications.swift; sourceTree = "<group>"; };
+		782BED5221A4BBB500EA15AF /* CKContainer + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKContainer + Extensions.swift"; sourceTree = "<group>"; };
+		78FDC9DB218FB41C00A0D7DE /* HazardReporter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HazardReporter.entitlements; sourceTree = "<group>"; };
+		78FDC9DD218FB41F00A0D7DE /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		F20E3AE62074EE3E00FDE78B /* HazardReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HazardReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20E3AE92074EE3E00FDE78B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F20E3AEE2074EE3E00FDE78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F20E3AF02074EE4000FDE78B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F20E3AF32074EE4000FDE78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F20E3AF52074EE4000FDE78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20E3AFE2074EF6A00FDE78B /* ActiveHazardReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveHazardReportsViewController.swift; sourceTree = "<group>"; };
+		F20E3AFF2074EF6A00FDE78B /* EditHazardReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditHazardReportViewController.swift; sourceTree = "<group>"; };
+		F20E3B002074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolvedHazardReportsViewController.swift; sourceTree = "<group>"; };
+		F20E3B012074EF6A00FDE78B /* HazardReportDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HazardReportDetailsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F20E3AE32074EE3E00FDE78B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78FDC9DE218FB41F00A0D7DE /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		782BED4F21A45C2500EA15AF /* Sync Management */ = {
+			isa = PBXGroup;
+			children = (
+				782BED5021A45C4F00EA15AF /* ChangeNotifications.swift */,
+				782BED5221A4BBB500EA15AF /* CKContainer + Extensions.swift */,
+			);
+			path = "Sync Management";
+			sourceTree = "<group>";
+		};
+		78FDC9DC218FB41F00A0D7DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78FDC9DD218FB41F00A0D7DE /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F20E3ADD2074EE3E00FDE78B = {
+			isa = PBXGroup;
+			children = (
+				F20E3AE82074EE3E00FDE78B /* HazardReporter */,
+				F20E3AE72074EE3E00FDE78B /* Products */,
+				78FDC9DC218FB41F00A0D7DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F20E3AE72074EE3E00FDE78B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F20E3AE62074EE3E00FDE78B /* HazardReporter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F20E3AE82074EE3E00FDE78B /* HazardReporter */ = {
+			isa = PBXGroup;
+			children = (
+				78FDC9DB218FB41C00A0D7DE /* HazardReporter.entitlements */,
+				F20E3AFB2074EF2300FDE78B /* Model */,
+				F20E3AFC2074EF3100FDE78B /* Views & Assets */,
+				F20E3AFD2074EF4200FDE78B /* View Controllers */,
+				F20E3AE92074EE3E00FDE78B /* AppDelegate.swift */,
+				F20E3AF52074EE4000FDE78B /* Info.plist */,
+				782BED4F21A45C2500EA15AF /* Sync Management */,
+			);
+			path = HazardReporter;
+			sourceTree = "<group>";
+		};
+		F20E3AFB2074EF2300FDE78B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				782BD4D22195394E00FD24F2 /* HazardReport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F20E3AFC2074EF3100FDE78B /* Views & Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F20E3AED2074EE3E00FDE78B /* Main.storyboard */,
+				F20E3AF02074EE4000FDE78B /* Assets.xcassets */,
+				F20E3AF22074EE4000FDE78B /* LaunchScreen.storyboard */,
+			);
+			path = "Views & Assets";
+			sourceTree = "<group>";
+		};
+		F20E3AFD2074EF4200FDE78B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F20E3AFE2074EF6A00FDE78B /* ActiveHazardReportsViewController.swift */,
+				F20E3AFF2074EF6A00FDE78B /* EditHazardReportViewController.swift */,
+				F20E3B012074EF6A00FDE78B /* HazardReportDetailsViewController.swift */,
+				F20E3B002074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F20E3AE52074EE3E00FDE78B /* HazardReporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F20E3AF82074EE4000FDE78B /* Build configuration list for PBXNativeTarget "HazardReporter" */;
+			buildPhases = (
+				F20E3AE22074EE3E00FDE78B /* Sources */,
+				F20E3AE32074EE3E00FDE78B /* Frameworks */,
+				F20E3AE42074EE3E00FDE78B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HazardReporter;
+			productName = HazardReporter;
+			productReference = F20E3AE62074EE3E00FDE78B /* HazardReporter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F20E3ADE2074EE3E00FDE78B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = pluralsight;
+				TargetAttributes = {
+					F20E3AE52074EE3E00FDE78B = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F20E3AE12074EE3E00FDE78B /* Build configuration list for PBXProject "HazardReporter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F20E3ADD2074EE3E00FDE78B;
+			productRefGroup = F20E3AE72074EE3E00FDE78B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F20E3AE52074EE3E00FDE78B /* HazardReporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F20E3AE42074EE3E00FDE78B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20E3AF42074EE4000FDE78B /* LaunchScreen.storyboard in Resources */,
+				F20E3AF12074EE4000FDE78B /* Assets.xcassets in Resources */,
+				F20E3AEF2074EE3E00FDE78B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F20E3AE22074EE3E00FDE78B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20E3B022074EF6A00FDE78B /* ActiveHazardReportsViewController.swift in Sources */,
+				782BED5121A45C4F00EA15AF /* ChangeNotifications.swift in Sources */,
+				F20E3B032074EF6A00FDE78B /* EditHazardReportViewController.swift in Sources */,
+				F20E3B052074EF6A00FDE78B /* HazardReportDetailsViewController.swift in Sources */,
+				F20E3AEA2074EE3E00FDE78B /* AppDelegate.swift in Sources */,
+				782BED5321A4BBB500EA15AF /* CKContainer + Extensions.swift in Sources */,
+				F20E3B042074EF6A00FDE78B /* ResolvedHazardReportsViewController.swift in Sources */,
+				782BD4D32195394E00FD24F2 /* HazardReport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F20E3AED2074EE3E00FDE78B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F20E3AEE2074EE3E00FDE78B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F20E3AF22074EE4000FDE78B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F20E3AF32074EE4000FDE78B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F20E3AF62074EE4000FDE78B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F20E3AF72074EE4000FDE78B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F20E3AF92074EE4000FDE78B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HazardReporter/HazardReporter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RM3BBMB98;
+				INFOPLIST_FILE = HazardReporter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = social.Finch.HazardReporter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F20E3AFA2074EE4000FDE78B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HazardReporter/HazardReporter.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7RM3BBMB98;
+				INFOPLIST_FILE = HazardReporter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = social.Finch.HazardReporter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F20E3AE12074EE3E00FDE78B /* Build configuration list for PBXProject "HazardReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20E3AF62074EE4000FDE78B /* Debug */,
+				F20E3AF72074EE4000FDE78B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F20E3AF82074EE4000FDE78B /* Build configuration list for PBXNativeTarget "HazardReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20E3AF92074EE4000FDE78B /* Debug */,
+				F20E3AFA2074EE4000FDE78B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F20E3ADE2074EE3E00FDE78B /* Project object */;
+}
